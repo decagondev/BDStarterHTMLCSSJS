@@ -33,7 +33,7 @@ public class ContactController {
     }
 
     @DeleteMapping("{id}")
-    public String update(@PathVariable( value = "id") String id) {
+    public String delete(@PathVariable( value = "id") String id) {
         return contactRepo.delete(id);
     }
 }
